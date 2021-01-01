@@ -1,0 +1,160 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+header {
+  background-color:  black;
+  color: white;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  flex-grow: 5;
+}
+
+.main-section {
+  padding: 10px;
+}
+
+.section-title {
+  display: block;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+.product-list-container {
+  grid-column: span 2;
+}
+
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.product {
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.product-img { width: 100%; }
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-add-cart {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.shopping-cart {
+  grid-column: span 1;
+  border-left: 3px solid black;
+}
+@media screen and (max-width: 1120px) {
+  .shopping-cart {
+    border-left: 0;
+    border-top: 3px solid black;
+    grid-column: span 3;
+  }
+}
+
+.card-product-list--empty,
+.cards-product-list {
+  min-height: 535px;
+}
+
+.card-product-list--empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-product-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.single-product {
+  display: flex;
+  gap: 15px;
+}
+
+.single-product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 2;
+}
+
+.single-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1ch;
+}
+
+.single-product-name {
+  padding: 0;
+  margin: 0;
+}
+
+.single-product-img { object-fit: cover; }
+
+.single-product-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-product-actions-quantity {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.single-product-button-action {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: .5ch;
+  width: 3ch;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.total-container {
+  background-color: black;
+  color: white;
+  padding: 20px 10px;
+}
+
+.total-info {
+  display: flex;
+  justify-content: space-between;
+}

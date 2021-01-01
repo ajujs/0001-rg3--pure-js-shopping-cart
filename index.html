@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure JS Shopping Cart</title>
+</head>
+<body>
+  <header>
+    <h1>Pure JS Shopping Cart</h1>
+  </header>
+  
+  <main>
+    <section class="main-section product-list-container">
+    <!-- Product list area * start -->
+      <h2 class="section-title">Product List</h2>
+      <ul class="product-list">
+        <li class="product">
+          <img src="https://picsum.photos/150/100" alt="" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">Product 1</h2>
+            <span class="product-price">$ 0,00</span>
+          </div>
+          <button class="product-add-cart">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="https://picsum.photos/150/100" alt="" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">Product 1</h2>
+            <span class="product-price">$ 0,00</span>
+          </div>
+          <button class="product-add-cart">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="https://picsum.photos/150/100" alt="" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">Product 1</h2>
+            <span class="product-price">$ 0,00</span>
+          </div>
+          <button class="product-add-cart">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="https://picsum.photos/150/100" alt="" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">Product 1</h2>
+            <span class="product-price">$ 0,00</span>
+          </div>
+          <button class="product-add-cart">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="https://picsum.photos/150/100" alt="" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">Product 1</h2>
+            <span class="product-price">$ 0,00</span>
+          </div>
+          <button class="product-add-cart">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="https://picsum.photos/150/100" alt="" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">Product 1</h2>
+            <span class="product-price">$ 0,00</span>
+          </div>
+          <button class="product-add-cart">Add to cart</button>
+        </li>
+      </ul>
+    <!-- Product list area * end -->
+    </section>
+  
+    <section class="main-section shopping-cart">
+      <h2 class="section-title">Your Cart</h2>
+
+      <!-- Card product area * start -->
+      <div class="card-products-list-container">
+        <ul class="cards-product-list" id="cardProductList">
+
+          <li class="single-product">
+            <img src="https://picsum.photos/150/100" alt="" class="single-product-img">
+            <div class="single-product-container">
+              <div class="single-product-info">
+                <h3 class="single-product-name">Product 1</h3>
+                <span class="single-product-price">$ 0,00</span>
+              </div>
+              <div class="single-product-actions">
+                <div class="single-product-actions-quantity">
+                  <button class="single-product-button-action">+</button>
+                  <span class="single-product-quantity-value">1</span>
+                  <button class="single-product-button-action">-</button>
+                </div>
+                <button class="single-product-button-action">x</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="single-product">
+            <img src="https://picsum.photos/150/100" alt="" class="single-product-img">
+            <div class="single-product-container">
+              <div class="single-product-info">
+                <h3 class="single-product-name">Product 1</h3>
+                <span class="single-product-price">$ 0,00</span>
+              </div>
+              <div class="single-product-actions">
+                <div class="single-product-actions-quantity">
+                  <button class="single-product-button-action">+</button>
+                  <span class="single-product-quantity-value">1</span>
+                  <button class="single-product-button-action">-</button>
+                </div>
+                <button class="single-product-button-action">x</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="single-product">
+            <img src="https://picsum.photos/150/100" alt="" class="single-product-img">
+            <div class="single-product-container">
+              <div class="single-product-info">
+                <h3 class="single-product-name">Product 1</h3>
+                <span class="single-product-price">$ 0,00</span>
+              </div>
+              <div class="single-product-actions">
+                <div class="single-product-actions-quantity">
+                  <button class="single-product-button-action">+</button>
+                  <span class="single-product-quantity-value">1</span>
+                  <button class="single-product-button-action">-</button>
+                </div>
+                <button class="single-product-button-action">x</button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+        <div class="card-product-list--empty" id="cardProductListEmpty">
+          <span>Your shopping cart is empty</span>
+        </div>
+      </div>
+      <!-- Card product area * end -->
+
+      <div class="total-container">
+        <h3 class="total-info">
+          <span>Total price: </span>
+          <span class="total-price">$ 
+            <span id="totalPrice">0,00</span>
+          </span>
+        </h3>
+      </div>
+    </section>
+  </main>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js"></script>
+</body>
+</html>
